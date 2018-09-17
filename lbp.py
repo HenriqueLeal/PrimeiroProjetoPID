@@ -127,6 +127,7 @@ def main():
         #4
         height, width, channel = img_bgr[320:, 320:].shape
         img_gray = cv2.cvtColor(img_bgr[320:, 320:], cv2.COLOR_BGR2GRAY)
+        print("Precision Recall Recorded")
         img_lbp = np.zeros((height, width,3), np.uint8)
         for i in range(0, height):
             for j in range(0, width):

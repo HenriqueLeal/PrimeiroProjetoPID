@@ -1,9 +1,22 @@
+'''
+**************************************************
+* Digital Image Processing Activity              *
+* Prof. Dr. Aparecido Nilceu Marana              *
+* PPGCC - UNESP Bauru                            *
+* Henrique Leal Tavares                          *
+* 09/2018                                        *
+* WLD of Brodatz Album and Under the Curve Calc. *
+**************************************************
+'''
+
 descriptorgen = 1
 allimg = dir(mstring('*.gif'))
 imgn = length(allimg)
 if descriptorgen:
     histogenerate = zeros(16, 96)
     histo = zeros(1, 96)
+	
+	
     for i in mslice[1:imgn]:
         found = allimg(i).name
         img = imread(found)
